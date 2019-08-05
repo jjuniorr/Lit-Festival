@@ -1,0 +1,18 @@
+.picture-text-box{
+
+	height: 30rem;
+
+	img{
+		height: 80%;
+		width: 100%;
+		object-fit: cover;
+
+	}
+
+	p{
+		height: 20%;
+		font-size: $font-md;
+		text-align: left;
+		color: #eee;
+	}
+}

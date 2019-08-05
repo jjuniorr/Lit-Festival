@@ -1,0 +1,39 @@
+.btn{
+
+	text-transform: uppercase;
+	@include easeOut;
+	font-size: $font-xsm;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 1.7rem;
+	color: $color-primary;
+
+	&--black-fill{
+		background-color: $button-back;
+	}
+
+	&--circular{
+		border-radius: 100px 100px 100px 100px;
+	}
+
+	&--white-border{
+		border: 2px solid #fff;
+	}
+
+	&--orange-border{
+		border: 2px solid $color-secondary;
+	}
+
+	&--500w{
+		font-weight: 500;
+	}
+
+	&:hover{
+		background-color: $color-dark-gray;
+	}
+
+	&--md{
+		padding-left: 4.5rem;
+		padding-right: 4.5rem;
+	}
+}

@@ -1,0 +1,10 @@
+.footer{
+	background-color: $card-black;
+
+	.copyright{
+		padding: 2.5rem;
+		font-size: $font-sm;
+		display: flex;
+		justify-content: center;
+	}
+}

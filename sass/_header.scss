@@ -1,0 +1,90 @@
+.header{
+	grid-row: 1;
+	background-image: linear-gradient(rgba($color-overlay, .6), rgba($color-overlay, .6)), url('../img/header.jpeg');
+	background-size: cover;
+	background-position: center right;
+
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	grid-template-columns: minmax(min-content,1fr);
+	padding: 4rem;
+
+	&__top{
+		display: grid;
+		grid-template-columns: max-content 1fr max-content;
+		justify-content: center;
+		align-items: center;
+
+		&--brand-name{
+			display: block;
+			@include easeOut;
+
+			&:hover{
+				@include hoverRed;
+				transform: scale(1.1);
+			}
+		}
+
+		&-request-info{
+			display: grid;
+			grid-template-columns: repeat(3,max-content);
+			grid-gap: 2rem;
+			align-items: center;
+
+			.fas:hover{
+				@include hoverGray;
+			}
+
+			@media screen and (max-width: 1015px){
+				justify-content: end;
+			}
+
+			@media screen and (max-width: 585px){
+				display: none;
+			}
+		}
+	}
+
+	&__headline{
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+		padding-left: 10rem;
+
+		h1{
+			width: 70%;
+			position: relative;
+			bottom: 10%;
+			@include titleFont;
+
+			@media screen and (max-width: 585px){
+				width: 100%;
+			}
+		}
+
+		&-subtext{
+			text-transform: uppercase;
+			text-align: center;
+
+			.heading-4 a{
+				display: inline-block;
+				line-height: 2;
+			}
+
+			.heading-4:hover > *{
+				@include moveX(15px);
+				@include easeOut;
+			}
+
+			.fas{
+				margin-left: 0.5rem;
+			}
+		}
+
+		@media screen and (max-width: 585px){
+			padding-left: 0rem;
+		}
+	}
+}

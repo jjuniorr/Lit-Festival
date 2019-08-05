@@ -1,0 +1,74 @@
+.heading-1{
+	font-size: 8rem;
+	&--sec{
+		color: $color-secondary;
+	}
+	&--ter{
+		color: $color-tertiary;
+	}
+
+	@media screen and (max-width: 1015px){
+		font-size: 7rem;
+	}
+
+	@media screen and (max-width: 650px){
+		font-size: 6rem;
+	}
+
+	@media screen and (max-width: 375px){
+		font-size: 5rem;
+	}
+}
+
+.heading-2{
+	font-size: 7rem;
+
+	&--sec{
+		color: $color-secondary;
+	}
+	&--ter{
+		color: $color-tertiary;
+	}
+
+	@media screen and (max-width: 1015px){
+		font-size: 5rem;
+	}
+
+	@media screen and (max-width: 480px){
+		font-size: 4rem;
+	}
+}
+
+.heading-3{
+	font-size: 3.5rem;
+
+	&--sec{
+		color: $color-secondary;
+	}
+	&--ter{
+		color: $color-tertiary;
+	}
+}
+
+.heading-4{
+	font-size: 2rem;
+	&--sec{
+		color: $color-secondary;
+	}
+	&--ter{
+		color: $color-tertiary;
+	}
+}
+
+.heading-5{
+	font-size: 1.2rem;
+	&--sec{
+		color: $color-secondary;
+	}
+	&--ter{
+		color: $color-tertiary;
+	}
+}
+.text-red{
+	color: $color-red;
+}

@@ -1,0 +1,34 @@
+@mixin easeOut{
+	transition: all .2s ease-out;
+}
+
+@mixin hoverRed{
+	color: $color-red;
+}
+
+@mixin hoverGray{
+	color: $color-dark-gray
+}
+
+@mixin moveY($property){
+	transform: translateY($property);
+}
+
+@mixin moveX($property){
+	transform: translateX($property);
+}
+
+@mixin triangleClipRight{
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 93% 49%, 100% 58%, 100% 100%, 0 100%);
+	clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 93% 49%, 100% 58%, 100% 100%, 0 100%);
+}
+
+@mixin triangleClipLeft{
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 0 60%, 7% 49%, 0 38%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%, 0 60%, 7% 49%, 0 38%);
+}
+
+@mixin titleFont{
+	text-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    font-family: $font-title;
+}
